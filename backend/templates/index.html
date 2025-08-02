@@ -1,13 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Branch 
-NoteSyncApp</title>
-    </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEA - Tela de Teste</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background-color: #1e1b4b;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    .card h1 {
+      margin-bottom: 1rem;
+    }
+    .card button {
+      background-color: #3b82f6;
+      border: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .card button:hover {
+      background-color: #2563eb;
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="card">
+    <h1>TEA de Teste</h1>
+    <p>Essa é só uma telinha pra brincar com HTML e CSS 😎</p>
+    <button onclick="alert('Testado com sucesso!')">Testar!</button>
+  </div>
 </body>
 </html>
