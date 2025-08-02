@@ -1,7 +1,8 @@
-flask
+Flask
+gunicorn
 authlib
 requests
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
-dotenv
+python-dotenv
