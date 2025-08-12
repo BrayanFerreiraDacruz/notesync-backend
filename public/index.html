@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TEA - Tela de Teste Backend</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background-color: #1e1b4b;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+    pre {
+      background: rgba(255,255,255,0.1);
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      white-space: pre-wrap;
+      text-align: left;
+    }
+    button {
+      background-color: #3b82f6;
+      border: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 1rem;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>TEA de Teste Backend</h1>
+    <p>Essa tela vai testar se teu backend está respondendo JSON na rota /api/test.</p>
+    <button onclick="testBackend()">Testar Conexão</button>
+    <pre id="resultado">Clique no botão para iniciar o teste...</pre>
+  </div>
+
+  <script>
+    const resultado = document.getElementById('resultado');
+    const API_URL = 'https://backend-u287.onrender.com/api/test';
+
+    async function testBackend() {
+      resultado.textContent = 'Carregando...';
+      try {
+        const response = await fetch(API_URL);
+        if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+
+        const data = await response.json();
+        resultado.textContent = 'Conexão bem-sucedida:\n' + JSON.stringify(data, null, 2);
+      } catch (error) {
+        resultado.textContent = 'Erro ao conectar: ' + error.message;
+      }
+    }
+  </script>
+</body>
+</html>
