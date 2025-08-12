@@ -1,4 +1,5 @@
 Flask
+Flask-Cors
 gunicorn
 authlib
 requests
@@ -6,9 +7,3 @@ google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
 python-dotenv
-Flask
-google-api-python-client
-google-auth-httplib2
-google-auth-oauthlib
-python-dotenv
-Flask-Cors

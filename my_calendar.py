@@ -3,6 +3,17 @@ import datetime
 import pickle
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
+# my_calendar.py
+
+def create_event(title, description, start_datetime):
+    """
+    Função mock para simular criação de evento no Google Calendar.
+    Retorna um link fictício para o evento.
+    """
+    print(f"[Simulação] Criando evento: {title} - {description} em {start_datetime}")
+    fake_event_link = "https://calendar.google.com/event?eid=EXEMPLO123"
+    return fake_event_link
+
 
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 
