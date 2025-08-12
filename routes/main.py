@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from calendar import create_event
+from my_calendar import create_event
+
 import datetime
 
 app = Flask(__name__)
