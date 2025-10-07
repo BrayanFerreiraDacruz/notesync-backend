@@ -1,0 +1,24 @@
+{
+  "name": "anoteaqui",
+  "version": "1.0.0",
+  "description": "Aplicação de anotações com integração ao Google Calendar",
+  "main": "authService.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrayanFerreiraDacruz/notesync-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BrayanFerreiraDacruz/notesync-backend/issues"
+  },
+  "homepage": "https://github.com/BrayanFerreiraDacruz/notesync-backend#readme"
+}
